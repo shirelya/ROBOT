@@ -1,0 +1,11 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Test Cases ***
+Logon
+    Open Browser    https://my325092.crm.ondemand.com/sap/public/ap/ui/repository/SAP_UI/HTML5/client.html    chrome
+    Input Text    id=__control0-user    SAP0014
+    Input Password    id=__control0-pass    Welcome3
+    click button    id=__control0-logonBtn
+    sleep    5s
+    close browser
